@@ -56,7 +56,45 @@ export default function MyEditor() {
   const initialValues: EmailTemplate | null = useMemo(() => {
     return {
       subject: 'Welcome to Easy Email Pro',
-      content: BlockManager.getBlockByType(ElementType.PAGE).create(),
+      content: {
+        "data": {
+          "breakpoint": "480px",
+          "globalAttributes": {
+            "font-family": "Arial, sans-serif"
+          }
+        },
+        "type": "page",
+        "children": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-column",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "placeholder",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "attributes": {
+          "background-color": "#f5f5f5",
+          "content-background-color": "#ffffff"
+        }
+      }
     };
   }, []);
 
