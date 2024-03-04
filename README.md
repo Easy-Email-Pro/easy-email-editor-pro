@@ -108,7 +108,9 @@ export default function MyEditor() {
  }
 
 const config = Retro.useCreateConfig({
-    clientId: "FREE", // Paid clients fill in the Client ID here, not "FREE". Want a one-week trial? Please contact ch.mao@qq.com .
+
+    // Paid clients fill in the Client ID here, not "FREE". Want a one-week trial? Please contact ch.mao@qq.com .
+    clientId: "FREE", 
     height: "calc(100vh - 66px)",
     onUpload,
     initialValues: initialValues,
