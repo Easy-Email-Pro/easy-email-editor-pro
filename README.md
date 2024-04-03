@@ -133,7 +133,3 @@ const config = Retro.useCreateConfig({
   );
 }
 ```
-
-## Docs
-
-Check out docs here: https://docs.easyemail.pro/docs/intro
